@@ -19,7 +19,7 @@
         right: 0px !important;
     }
     .navbar.navbar-fixed-top.scrolled .navbar-nav{
-        top: 90px;
+        top: 74px;
     }
     .navbar-nav li {
         margin: 10px 0px !important;
@@ -31,6 +31,22 @@
     }
 
     .about-us{
+        padding: 50px 0px !important;
+    }
+
+    header .owl-header .item .image-contnet{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    header .owl-header .item{
+        padding-top: 150px !important;
+    }
+    .navbar.navbar-fixed-top.scrolled img {
+        height: 56px !important;
+    }
+
+    footer{
         padding: 50px 0px !important;
     }
 }

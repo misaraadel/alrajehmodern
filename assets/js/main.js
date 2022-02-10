@@ -25,6 +25,14 @@ $(document).ready(function () {
         $('.navbar-nav').toggleClass('active-nav');
         $('body').toggleClass('overflowNone')
     });
+    wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 200,
+        mobile: true,
+        live: false
+    });
+    wow.init();
     //owl header screen 
     $('.owl-header').owlCarousel({
         rtl: true,
@@ -32,7 +40,7 @@ $(document).ready(function () {
         margin: 20,
         nav:true,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         touchDrag  :false,
 		mouseDrag  : false,
 		autoWidth: false,
@@ -134,6 +142,37 @@ $(document).ready(function () {
         responsive:{
             0:{
                 items:2
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+    $('.owl-numbers').owlCarousel({
+        rtl: true,
+        loop:false,
+        margin: 20,
+        nav:false,
+        dots: true,
+        autoplay: true,
+        touchDrag  : true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 6000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
             },
             600:{
                 items:2
